@@ -10,4 +10,5 @@ All raw data necessary to execute our scripts are included in the SourceData sub
   **03_region.cit.dist** Identifies Created or Destroyed regions of protein antigens and calculates the distance from these regions to the nearest citrullinated residue. <br />
   **04_stats** Calculates statistics on regional distance data from script 03 above. <br />
   **05_plotting** Plots differential expression in the format used in the final manuscript. <br />
-  **06_3DStructureAnalysis** Performs distance calculations between Created/Destroyed regions and citrullinated residues on alphafold predictions of structure. 
+  **06_3DStructureAnalysis** Performs distance calculations between Created/Destroyed regions and citrullinated residues on alphafold predictions of structure. <br />
+  **07_VolcanoPlots_NetMHCII-cores.rmd** Creates volcano plots and calculates abundance of NetMHCII-predicted high-binding cores in total peptide repertoire. <br />
