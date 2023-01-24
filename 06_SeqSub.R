@@ -4,14 +4,10 @@
 ##Generate pseudo-citrullinated sequences by substituting
 ##R for Q at designated sites. 
 ##28 January 2022
-rm(list = ls())
-SAVE_FIGS <- FALSE
-PARENT_DIR <- c("pct_cit") #This will be a subdir of master/results/
-savedir <- paste0(getwd(), "/results/", PARENT_DIR)
-if (!dir.exists(savedir) && SAVE_FIGS) {dir.create(savedir, showWarnings = FALSE)}
+
 ###LIBRARIES/WORKDIR####
-#setwd("/media/aag7319/WDBlue/ZZZ_protmap")
-setwd("C:/Users/aag73/Desktop/Curran-et-al-2022_Citrullination")
+setwd("/media/aag7319/WDRed/Curran-et-al-2022_Cit_AgProc") #Change to git repo directory to run. 
+
 library(readxl)
 library(RColorBrewer)
 library(viridis)
@@ -422,6 +418,5 @@ fasta.seq.list <- fasta.seq.list[-to.rm]
 
 write.fasta(fasta.seq.list, names(fasta.seq.list), "./objects/sequences.fasta")
 ###SAVE DATA FOR LATER####
-protmap_dat <- c()
-save(cit_sites_all, file = "./objects/cit-sites-all-10.rda")
-save(protmap_dat, file = "./objects/protmap_dat.rda")
+#save(cit_sites_all, file = "./objects/cit-sites-all-10.rda")
+#save(protmap_dat, file = "./objects/protmap_dat.rda")

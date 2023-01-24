@@ -104,7 +104,7 @@ process1 <- function(p2,n){
 #Plot1: DiffEx between two conditions - centers around zero, two cutoff lines
 #Plot2: Same as Plot1 but labels provided cit sites. 
 #Plot3: Same as Plot0 but labels provided cit sites. 
-#Plot4X: Me bullshitting some patterns for AC 6 Apr 2022. Mods on Plot2 Fn. 
+#Plot4X: Trialing different plotting schemes for AC 6 Apr 2022. Mods on Plot2 Fn. 
 plot0 <- function(d, cutoff, specifier){
   #log2 the data
   d[which(d == 0)] <- 1
